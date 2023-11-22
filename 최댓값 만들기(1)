@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+class Solution {
+    public int solution(int[] numbers) {
+		Arrays.sort(numbers);// 파괴형
+		int last = numbers[numbers.length - 1]; // 4
+		int last2 = numbers[numbers.length - 2]; // 3
+		int answer = last * last2;
+		return answer;
+	}
+}
